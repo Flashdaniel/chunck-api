@@ -1,0 +1,1 @@
+function chunck(array, length) {}
