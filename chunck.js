@@ -1,9 +1,9 @@
-function chunck(array, length) {
+function chunck(array, n) {
   let result = [];
-  let length = array.length / length;
+  let length = array.length / n;
   length = Number.isInteger(length) ? length : Math.floor(++length);
 
-  const newArray = array.slice();
+  let newArray = array.slice();
   const firstIndex = 0;
   const lastIndex = length;
 
@@ -14,3 +14,5 @@ function chunck(array, length) {
 
   return result;
 }
+
+export default chunck;
